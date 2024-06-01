@@ -86,7 +86,7 @@ start_floor = st.slider("출발 층", 1, 15, 1)
 end_floor = st.slider("도착 층", 1, 15, 1)
 
 if st.button("최적 경로 계산"):
-    with st.spinner('계산중...🤔'):
+    with st.spinner('계산중... 🤔'):
         time.sleep(2)
         optimal_path_with_transfers, fatigue_score_with_transfers = find_optimal_path_with_transfers(start_floor, end_floor)
 
